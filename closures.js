@@ -69,7 +69,7 @@ console.log(addThree(41));
 // - This function should return the greeting combined with the name, (i.e. "Hello Matt")
 const createGreeting = function (greeting) {
   return (name)};
-const greet = createGreeting("Hello");};
+const greet = createGreeting("Hello");
   
 
 
