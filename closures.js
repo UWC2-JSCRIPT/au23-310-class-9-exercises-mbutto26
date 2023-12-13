@@ -67,12 +67,12 @@ console.log(addThree(41));
 // This will return a function a function greet
 // - This accepts a single argument, name (i.e. "Matt")
 // - This function should return the greeting combined with the name, (i.e. "Hello Matt")
-const createGreeting = function (greeting) {
-  return (name)};
-const greet = createGreeting("Hello");
-  
-
-
+const createGreeting = (greeting) => {
+  return (name) => {
+    return `${greeting}, ${name}`;
+  };
+};
+const greet = createGreeting("Hi there");
 console.log(greet("Dennis"));
 
 // Test

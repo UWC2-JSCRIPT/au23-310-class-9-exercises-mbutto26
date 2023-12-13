@@ -11,9 +11,9 @@ repeatFn(5, (param) => {
   console.log(param);
 });
 // Test repeatFn
-const addButton = (5) => {
+const addButton = (num) => {
   const button = document.createElement("button");
-  button.innerText = `Button ${5}`;
+  button.innerText = `Button ${num}`;
   document.querySelector("body").appendChild(button);
 };
 repeatFn(6, addButton);
