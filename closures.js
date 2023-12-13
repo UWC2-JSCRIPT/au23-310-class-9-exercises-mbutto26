@@ -72,8 +72,8 @@ const createGreeting = (greeting) => {
     return `${greeting}, ${name}`;
   };
 };
-const greet = createGreeting("Hi there");
-console.log(greet("Dennis"));
+const greet = createGreeting("Hello");
+console.log(greet("Matt"));
 
 // Test
 const welcomeGreet = createGreeting("Welcome");
