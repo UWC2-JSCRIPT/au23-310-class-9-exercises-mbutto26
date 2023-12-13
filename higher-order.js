@@ -1,13 +1,20 @@
-// This function should execute the callback function the number of times specified.
+// This function should execute the CALLBACK FUNCTION the number of times specified.
 // When the function is being executed, the repetition number (i.e. 1 for the first call)
 // should be passed to the callback.
-const repeatFn = (times, callback) => {};
+const repeatFn = (num, callback) => {
+  for (i = 0; i < num; i++) {
+    callback(i);
+  }
+};
 
+repeatFn(5, (param) => {
+  console.log(param);
+});
 // Test repeatFn
-const addButton = num => {
-  const button = document.createElement('button');
+const addButton = (num) => {
+  const button = document.createElement("button");
   button.innerText = `Button ${num}`;
-  document.querySelector('body').appendChild(button);
+  document.querySelector("body").appendChild(button);
 };
 repeatFn(6, addButton);
 
